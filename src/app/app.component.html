@@ -1,0 +1,5 @@
+<form (submit)="sendMessage()">
+    <input [(ngModel)]="message" name="message" placeholder="Votre message" />
+    <button type="submit">Envoyer</button>
+</form>
+<div *ngFor="let msg of messages">{{ msg }}</div>
