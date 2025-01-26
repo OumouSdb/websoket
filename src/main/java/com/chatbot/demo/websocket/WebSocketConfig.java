@@ -13,7 +13,6 @@ public class WebSocketConfig implements WebSocketConfigurer {
     public WebSocketConfig(SimpleWebSocketHandler simpleWebSocketHandler) {
         this.simpleWebSocketHandler = simpleWebSocketHandler;
     }
-
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry.addHandler(simpleWebSocketHandler, "/ws").setAllowedOrigins("*");

@@ -52,6 +52,5 @@ public class SimpleWebSocketHandler extends TextWebSocketHandler {
         sessions.remove(session);
     }
 
-
 }
 
